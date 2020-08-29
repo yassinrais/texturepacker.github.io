@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>TexturePacker App</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="main row">
+            <div class="col-3 null">
+                <div class="card null  vh-100">
+                    <div class="card-header ">
+                        <i class="fa fa-cogs"></i> Settings 
+                    </div>
+                    <div class="card-body p-0">
+                        <ul class="image-list p-0 pt-3 pb-3">
+                            <li>
+                                Img 1
+                            </li>
+                            <li>
+                                Img 2
+                            </li>
+                        </ul>
+                        <hr>
+                        <div class="w-100 pl-3 text-center">
+                            <div class="row">
+                                <div class="form-group col row">
+                                    <label for="rows">Rows</label>
+                                    <input type="number" min="0" value="0" id="rows" class="form-control null">
+                                </div>
+                                <div class="form-group col row">
+                                    <label for="cols">Columns</label>
+                                    <input type="number" min="0" value="0" id="cols" class="form-control null">
+                                </div>
+                                <div class="form-group col row">
+                                    <label for="cols">Padding</label>
+                                    <input type="number" value="0" id="padding" class="form-control null">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-100  text-center">
+                            <button class="btn mb-2 btn-default null pl-2 pr-2 col-5" id="uploadbtn"><i class="fa fa-upload"></i> Upload Images</button>
+                            <button class="btn mb-2 btn-default null pl-2 pr-2 col-5"><i class="fa fa-trash"></i> Clear All</button>
+                            <button id="exportbtn" class="btn mb-2 btn-default null pl-2 pr-2 col-5 "><i class="fa fa-image"></i> Export PNG</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-canvas null">
+                <canvas class="canvastool"></canvas>
+            </div>
+        </div>
+        
+        <div class="row">
+
+            <input type="file" style="display: none;" multiple id="uploadfile">
+            <canvas class="canvasfinal" ></canvas>
+            <a style="position:fixed;bottom:-200;" id="download" download="sprite.png">
+                <button type="button" id="buttontoclick">Download</button>
+            </a>
+        </div>
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
