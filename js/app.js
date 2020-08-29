@@ -144,8 +144,8 @@ var getClcItems = ()=>{
     for(var i in images){
         let img = images[i];
         
-        x = (img.img.height  + c.padding ) * (row.length);
-        y = (img.img.width  + c.padding ) * (allrows.length);
+        x = (img.img.width  + c.padding ) * (row.length);
+        y = (img.img.height  + c.padding ) * (allrows.length);
         sx = x + img.img.width;
         sy = y + img.img.height;
 
