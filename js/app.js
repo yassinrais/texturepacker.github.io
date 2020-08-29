@@ -11,9 +11,11 @@ var fctx = fcanvas.getContext('2d');
 
 // button
 $('#uploadbtn').on('click', function(){
-
     $('#uploadfile').click();
-    
+});
+$('#clearbtn').on('click', function(){
+    images = {};
+    updateFiles();
 });
 // export img
 $('#exportbtn').on('click', function(){
